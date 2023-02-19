@@ -2,7 +2,7 @@
     <div class="header-left">
         <span class="logo"></span>
     </div>
-    <div class="header-right">
+    <div class="header-right" (clickOutside)="closeDropdown()">
         <div (click)="accountDropdown()">Account</div>
         <div class="dropdown" *ngIf="showAccountDropdown">
             <span>about</span>

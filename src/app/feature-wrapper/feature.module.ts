@@ -5,12 +5,14 @@ import { FeatureWrapperComponent } from "./feature-wrapper.component";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
 import { FeatureRoutingModule } from "./feature-routing.module";
+import { ClickOutsideDirective } from "src/utils/directives/click-outside.directive";
 
 @NgModule({
     declarations: [
         FeatureWrapperComponent,
         ShopComponent,
-        ProductDetailsComponent
+        ProductDetailsComponent,
+        ClickOutsideDirective
     ],
     imports: [BrowserModule, RouterModule, FeatureRoutingModule],
     exports: [

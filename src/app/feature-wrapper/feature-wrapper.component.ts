@@ -13,4 +13,8 @@ export class FeatureWrapperComponent {
     this.showAccountDropdown = !this.showAccountDropdown;
   }
 
+  public closeDropdown(){
+    this.showAccountDropdown = false;
+  }
+
 }
