@@ -3,11 +3,13 @@
         <span class="logo"></span>
     </div>
     <div class="header-right">
-        <span>Account</span>
+        <div (click)="accountDropdown()">Account</div>
+        <div class="dropdown" *ngIf="showAccountDropdown">
+            <span>about</span>
+            <span>logout</span>
+        </div>
     </div>
 </div>
 <div class="content">
     <router-outlet></router-outlet>
-    <!-- <app-shop></app-shop> -->
 </div>
-

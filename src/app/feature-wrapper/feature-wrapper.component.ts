@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-feature-wrapper',
   templateUrl: './feature-wrapper.component.html',
   styleUrls: ['./feature-wrapper.component.scss']
 })
-export class FeatureWrapperComponent implements OnInit {
+export class FeatureWrapperComponent {
 
-  constructor() { }
+  public showAccountDropdown = false;
 
-  ngOnInit(): void {
+  public accountDropdown(){
+    this.showAccountDropdown = !this.showAccountDropdown;
   }
 
 }
